@@ -1,0 +1,11 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev:test",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"]
+}
+
+
+
+
