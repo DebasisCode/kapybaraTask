@@ -17,31 +17,39 @@ A modern full-stack blogging platform built with Next.js 15, tRPC, PostgreSQL, a
 
 ## ✨ Features
 
-### ✅ Priority 1 (Must-Haves) - Completed
-- ✅ Blog post CRUD operations (Create, Read, Update, Delete)
-- ✅ Category CRUD operations
-- ✅ Assign one or more categories to posts
-- ✅ Blog listing page with all posts
-- ✅ Individual post view page with full content
-- ✅ Category filtering on blog listing page
-- ✅ Responsive navigation with mobile menu
+### 📝 Blog Post Management
+- **Create and Edit Posts**: Write blog posts using a Markdown editor with live preview functionality
+- **Draft System**: Save posts as drafts and publish them when ready with a simple toggle
+- **Category Organization**: Assign one or more categories to each post for better organization
+- **Full Content Management**: Complete CRUD operations - create, read, update, and delete posts
+- **Dashboard View**: Centralized dashboard to view and manage all your posts in one place
 
-### ✅ Priority 2 (Should-Haves) - Completed
-- ✅ Landing page with Hero, Features, and CTA sections
-- ✅ Dashboard page for managing all posts
-- ✅ Draft/Published status for posts with toggle functionality
-- ✅ Loading states (skeletons) and error handling
-- ✅ Full mobile-responsive design
-- ✅ Markdown content editor with live preview
+### 🏷️ Category Management
+- **Flexible Categories**: Create, update, and delete categories to organize your content
+- **Category Filtering**: Browse posts by category on the blog listing page
+- **Unique Slugs**: Categories automatically generate URL-friendly slugs
 
-### ⏳ Priority 3 (Nice-to-Haves) - Partial
-- ⏳ Search functionality (not implemented)
-- ⏳ Post statistics (word count, reading time) (not implemented)
-- ⏳ Dark mode (not implemented)
-- ⏳ Image uploads (not implemented)
-- ⏳ Post preview functionality (not implemented)
-- ✅ Pagination (implemented on blog listing)
-- ✅ SEO meta tags (implemented)
+### 📖 Blog Browsing Experience
+- **Post Listing**: Browse all published posts on a dedicated blog listing page
+- **Individual Post Views**: Read full post content on dedicated post pages
+- **Category Navigation**: Filter posts by category to find content that interests you
+- **Pagination**: Navigate through posts with paginated listing
+- **SEO Optimized**: All pages include proper meta tags, Open Graph tags, and Twitter Cards for better search engine visibility and social sharing
+
+### 🎨 User Interface & Design
+- **Modern Landing Page**: Welcome visitors with a professional landing page featuring Hero, Features, and Call-to-Action sections
+- **Responsive Design**: Fully mobile-responsive interface that works seamlessly on all devices
+- **Mobile Navigation**: Touch-friendly mobile menu for easy navigation on smartphones and tablets
+- **Loading States**: Smooth loading skeletons while content is being fetched
+- **Error Handling**: User-friendly error messages with retry functionality for graceful error recovery
+
+### 🔄 Planned Features
+The following features are planned for future releases:
+- Search functionality to find posts by keywords
+- Post statistics including word count and estimated reading time
+- Dark mode for comfortable viewing in low-light environments
+- Image uploads for richer content
+- Post preview functionality before publishing
 
 ## 📋 Getting Started
 
