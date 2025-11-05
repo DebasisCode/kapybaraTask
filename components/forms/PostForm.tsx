@@ -18,12 +18,20 @@ interface PostFormProps {
 export default function PostForm({ post, mode }: PostFormProps) {
   const router = useRouter();
 
+  // Helper to extract category ID - getBySlug and getById both return { categoryId }
+  const getCategoryId = (c: { categoryId: string } | { id: string }): string => {
+    if ("categoryId" in c) {
+      return c.categoryId;
+    }
+    return c.id;
+  };
+
   const [title, setTitle] = useState(post?.title || "");
   const [authorName, setAuthorName] = useState(post?.authorName || "");
   const [content, setContent] = useState(post?.content || "");
   const [published, setPublished] = useState(post?.published || false);
   const [selectedCategories, setSelectedCategories] = useState<string[]>(
-    post?.categories.map((c) => "categoryId" in c ? c.categoryId : c.id) || []
+    post?.categories ? post.categories.map(getCategoryId).filter((id) => id !== "") : []
   );
 
   const { data: categoriesData } = trpc.category.list.useQuery({ page: 1, limit: 50 });
